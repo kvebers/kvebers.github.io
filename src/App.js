@@ -1,4 +1,5 @@
 import React from 'react';
+import GallerySection from './gallery';
 import useParticles from './particles';
 import './App.css';
 
@@ -14,11 +15,11 @@ function App() {
         <p>I'm a programmer with hands-on experience in multiple languages like C, C++, C# and Python. I have a strong foundation in robotics and design, with an emphasis on product development. My passion lies not only in coding but also in achieving visual results, whether it's through graphics or data presentation.  </p>
       </section>
       <section class="gallery-section">
-        <h2>My Projects</h2>
-        <p>Detail your services or any other information you'd like to convey to your visitors here.</p>
+        <h2>Projects</h2>
+        <GallerySection/>
       </section>
-      <section>
-        <h2>Contact</h2>
+      <section class="contact-section">
+        <h2>Contacts</h2>
         <p>Provide contact information or a form here for users to get in touch.</p>
       </section>
       <footer>
