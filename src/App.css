@@ -1,0 +1,77 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.App-header, footer {
+  background-color: #0D0D0D;
+  color: white;
+}
+
+.App-header {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+#particleCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.App-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #D90452; 
+  font-size: 140px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+section, .App-header, footer {
+  padding: 20px 0;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+
+.about-section {
+  padding: 30px; 
+  background: linear-gradient(to bottom, #0D0D0D, #8C0335); 
+  text-align: center; 
+  overflow: hidden; 
+}
+
+.about-section h2 {
+  font-size: 80px; /* Reduce the font size */
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 10px; /* Reduce the margin at the bottom */
+}
+
+.about-section p {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #D90452;
+  font-size: 30px; /* Reduce the font size */
+  margin-top: 10px; /* Reduce the margin at the top */
+}
+
+
+
+.gallery-section {
+  padding: 30px; 
+  background-color: #8C0335;
+  color: #D90452;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
