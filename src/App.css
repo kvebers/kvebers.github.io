@@ -65,6 +65,22 @@ footer {
   margin-top: 10px;
 }
 
+.tools-section {
+  background-color: #8C0335;
+  margin: 0;
+}
+
+.tools-section {
+  font-size: 80px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #26010F; 
+}
+
+.tools-section p{
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #26010F; 
+}
 
 
 .gallery-section {
@@ -78,16 +94,17 @@ footer {
 .gallery-section h2 {
   font-size: 80px;
   font-family: 'Bebas Neue', sans-serif;
-  margin-bottom: 10px;
   color: #26010F; 
 }
 
 .contact-section {
+  margin: 0;
   background-color: #8C0335;
 }
 
 .contact-section h2 {
   font-size: 80px;
+  margin: 0;
   font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 10px;
   color: #26010F; 

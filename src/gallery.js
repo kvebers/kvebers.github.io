@@ -4,7 +4,19 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import mini from './images/minishell.jpg';
-import scop from './images/scop.jpg';
+import scop1 from './images/scop1.jpg';
+import scop2 from './images/scop2.jpg';
+import irc from './images/irc.jpg';
+import cube from './images/cube4d.jpg';
+import bit from './images/1bit.jpg';
+import long from './images/long.jpg';
+import push from './images/push.jpg';
+import python from './images/python.jpg';
+import space from './images/space.jpg';
+import tank from './images/tank.jpg';
+import tractor from './images/tractor.jpg';
+import watt from './images/watt.jpg';
+import rick from './images/rick.jpg';
 
 const projects = [
   {
@@ -13,39 +25,44 @@ const projects = [
   },
   {
     githubUrl: 'https://github.com/user/project2',
-    imageUrl: scop,
+    imageUrl: scop1,
   },
   {
     githubUrl: 'https://github.com/user/project2',
-    imageUrl: mini,
+    imageUrl: cube,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: scop,
+    imageUrl: tractor,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: mini,
+    imageUrl: tank,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: scop,
+    imageUrl: irc,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: mini,
+    imageUrl: bit,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: scop,
+    imageUrl: long,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: mini,
+    imageUrl: push,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: scop,
+    imageUrl: scop2,
+  },
+  {
+    imageUrl: python,
+  },
+  {
+    imageUrl: space,
+  },
+  {
+    imageUrl: watt,
+  },
+  {
+    imageUrl: rick,
   },
 ];
 

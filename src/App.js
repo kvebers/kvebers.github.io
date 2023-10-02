@@ -19,6 +19,10 @@ function App() {
       <section class="gallery-section">
         <GallerySection/>
       </section>
+      <section class="tools-section">
+        <h2>Tools</h2>
+        <p>Provide contact information or a form here for users to get in touch.</p>
+      </section>
       <section class="contact-section">
         <h2>Contacts</h2>
         <p>Provide contact information or a form here for users to get in touch.</p>
