@@ -62,6 +62,7 @@ function GallerySection() {
 
   return (
     <section className="gallery-section">
+      <h2>Projects</h2>
       <Slider {...settings}>
         {projects.map((project, index) => (
           <div key={index}>

@@ -12,10 +12,11 @@ function App() {
         <canvas id="particleCanvas"></canvas>
       </div>
       <section class="about-section">
-        <p>I'm a programmer with hands-on experience in multiple languages like C, C++, C# and Python. I have a strong foundation in robotics and design, with an emphasis on product development. My passion lies not only in coding but also in achieving visual results, whether it's through graphics or data presentation.  </p>
+        <p>I'm a programmer with hands-on experience in multiple languages like C, C++, C# and Python.</p>
+        <p>I have a strong foundation in robotics and design, with an emphasis on product development.</p>
+        <p>My passion lies not only in coding but also in achieving visual results, whether it's through graphics or data presentation.  </p>
       </section>
       <section class="gallery-section">
-        <h2>Projects</h2>
         <GallerySection/>
       </section>
       <section class="contact-section">
