@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1450e050.css",
-    "main.js": "/static/js/main.930b221f.js",
+    "main.js": "/static/js/main.6a50be42.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/rick.jpg": "/static/media/rick.4529620eed6c7fcc0c48.jpg",
     "static/media/python.jpg": "/static/media/python.a1a373e41707bc837b96.jpg",
@@ -11,7 +11,7 @@
     "static/media/1bit.jpg": "/static/media/1bit.a7321767c3f4df9b433b.jpg",
     "static/media/scop2.jpg": "/static/media/scop2.18657b62e1c1b0067a0f.jpg",
     "static/media/cube4d.jpg": "/static/media/cube4d.87a8b6396bad510d1e29.jpg",
-    "static/media/tractor.jpg": "/static/media/tractor.55566854b8483a9ae9ce.jpg",
+    "static/media/tractor.jpg": "/static/media/tractor.d714cc9debbd85a0695a.jpg",
     "static/media/push.jpg": "/static/media/push.0a4d5d7f9f8e7f0f594a.jpg",
     "static/media/tank.jpg": "/static/media/tank.275af904c60fe2898617.jpg",
     "static/media/minishell.jpg": "/static/media/minishell.3fa00f856c3a8f949513.jpg",
@@ -24,11 +24,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.1450e050.css.map": "/static/css/main.1450e050.css.map",
-    "main.930b221f.js.map": "/static/js/main.930b221f.js.map",
+    "main.6a50be42.js.map": "/static/js/main.6a50be42.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1450e050.css",
-    "static/js/main.930b221f.js"
+    "static/js/main.6a50be42.js"
   ]
 }
