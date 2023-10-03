@@ -2,6 +2,8 @@ import React from 'react';
 import GallerySection from './gallery';
 import useParticles from './particles';
 import './App.css';
+import githubIcon from './images/github.png'; // replace with your path
+import linkedinIcon from './images/linkedin.png';
 
 function App() {
   useParticles();
@@ -19,13 +21,16 @@ function App() {
       <section class="gallery-section">
         <GallerySection/>
       </section>
-      <section class="tools-section">
-        <h2>Tools</h2>
-        <p>Provide contact information or a form here for users to get in touch.</p>
-      </section>
       <section class="contact-section">
         <h2>Contacts</h2>
-        <p>Provide contact information or a form here for users to get in touch.</p>
+          <div className="contact-icons">
+          <a href="https://github.com/kvebers" target="_blank" rel="noopener noreferrer">
+            <img src={githubIcon} alt="GitHub" style={{ width: '128px', margin: '0 10px' }} />
+          </a>
+          <a href="https://www.linkedin.com/in/karlisvebers/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedinIcon} alt="LinkedIn" style={{ width: '128px', margin: '0 10px' }} />
+          </a>
+          </div>
       </section>
       <footer>
         <p>© 2023 Karlis Vilhelms Vebers</p>

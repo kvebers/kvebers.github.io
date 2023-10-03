@@ -20,15 +20,15 @@ import rick from './images/rick.jpg';
 
 const projects = [
   {
-    githubUrl: 'https://github.com/user/project2',
-    imageUrl: mini,
-  },
-  {
-    githubUrl: 'https://github.com/user/project2',
+    githubUrl: 'https://github.com/kvebers/42-Scop',
     imageUrl: scop1,
   },
   {
-    githubUrl: 'https://github.com/user/project2',
+    githubUrl: 'https://github.com/kvebers/minishell',
+    imageUrl: mini,
+  },
+  {
+    githubUrl: 'https://github.com/kvebers/cube4d',
     imageUrl: cube,
   },
   {
@@ -38,30 +38,37 @@ const projects = [
     imageUrl: tank,
   },
   {
+    githubUrl: 'https://github.com/kvebers/irc',
     imageUrl: irc,
   },
   {
+    githubUrl: 'https://github.com/kvebers/1bit',
     imageUrl: bit,
   },
   {
+    githubUrl: 'https://github.com/kvebers/loong',
     imageUrl: long,
   },
   {
+    githubUrl: 'https://github.com/kvebers/pushswap',
     imageUrl: push,
   },
   {
+    githubUrl: 'https://github.com/kvebers/42-Scop',
     imageUrl: scop2,
   },
   {
+    githubUrl: 'https://github.com/kvebers/Python_Piscine',
     imageUrl: python,
-  },
-  {
-    imageUrl: space,
   },
   {
     imageUrl: watt,
   },
   {
+    imageUrl: space,
+  },
+  {
+    githubUrl: 'https://github.com/kvebers/get_next_line',
     imageUrl: rick,
   },
 ];
