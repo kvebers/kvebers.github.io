@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/kvebers.github.io/static/css/main.7ad5e26d.css",
+    "main.js": "/kvebers.github.io/static/js/main.6f9cc19f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/kvebers.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/rick.jpg": "/kvebers.github.io/static/media/rick.4529620eed6c7fcc0c48.jpg",
+    "static/media/python.jpg": "/kvebers.github.io/static/media/python.a1a373e41707bc837b96.jpg",
+    "static/media/space.jpg": "/kvebers.github.io/static/media/space.9f3f57c87f825f051468.jpg",
+    "static/media/long.jpg": "/kvebers.github.io/static/media/long.4cb3650ef72cacbea170.jpg",
+    "static/media/irc.jpg": "/kvebers.github.io/static/media/irc.1e2ad73e511383510cd3.jpg",
+    "static/media/1bit.jpg": "/kvebers.github.io/static/media/1bit.a7321767c3f4df9b433b.jpg",
+    "static/media/scop2.jpg": "/kvebers.github.io/static/media/scop2.18657b62e1c1b0067a0f.jpg",
+    "static/media/cube4d.jpg": "/kvebers.github.io/static/media/cube4d.87a8b6396bad510d1e29.jpg",
+    "static/media/tractor.jpg": "/kvebers.github.io/static/media/tractor.55566854b8483a9ae9ce.jpg",
+    "static/media/push.jpg": "/kvebers.github.io/static/media/push.0a4d5d7f9f8e7f0f594a.jpg",
+    "static/media/tank.jpg": "/kvebers.github.io/static/media/tank.275af904c60fe2898617.jpg",
+    "static/media/minishell.jpg": "/kvebers.github.io/static/media/minishell.3fa00f856c3a8f949513.jpg",
+    "static/media/watt.jpg": "/kvebers.github.io/static/media/watt.13c51a1f0f01e62078d7.jpg",
+    "static/media/scop1.jpg": "/kvebers.github.io/static/media/scop1.2bed39d5a2aced5abab9.jpg",
+    "static/media/github.png": "/kvebers.github.io/static/media/github.8e0be2013cff6aa3488f.png",
+    "static/media/slick.svg": "/kvebers.github.io/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/kvebers.github.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/kvebers.github.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/kvebers.github.io/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/kvebers.github.io/index.html",
+    "main.7ad5e26d.css.map": "/kvebers.github.io/static/css/main.7ad5e26d.css.map",
+    "main.6f9cc19f.js.map": "/kvebers.github.io/static/js/main.6f9cc19f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/kvebers.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ad5e26d.css",
+    "static/js/main.6f9cc19f.js"
+  ]
+}
