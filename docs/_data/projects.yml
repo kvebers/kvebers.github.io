@@ -1,9 +1,10 @@
 - projects:
-    - name: "Lean Space Space Hackathon"
-      img: "assets/images/space.jpg"
-      redirect: "https://github.com/kvebers/Leanspace-2022-Hack-the-Space"
-      description: "Satellite Control to take images from space"
-    - name: "Another Project"
-      img: "assets/images/another.jpg"
-      redirect: "https://example.com/another"
-      description: "Description of another project"
+    name: "Lean Space Space Hackathon"
+    img: "assets/images/space.jpg"
+    redirect: "https://github.com/kvebers/Leanspace-2022-Hack-the-Space"
+    description: "Satellite Control to take images from space"
+- projects:
+    name: "Another Project"
+    img: "assets/images/another.jpg"
+    redirect: "https://example.com/another"
+    description: "Description of another project"
