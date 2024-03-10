@@ -55,4 +55,12 @@ window.onload = function () {
   }
 
   handleAnimation();
+  window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = 500;
+    particlesArray.length = 0;
+    for (let i = 0; i < numberOfParticles; i++) {
+      particlesArray.push(new Particle());
+    }
+  });
 };

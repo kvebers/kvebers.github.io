@@ -68,3 +68,65 @@ footer p {
   margin: 0;
   text-align: center;
 }
+
+.sectionName {
+  background-color: #8c0335;
+  width: 100%;
+  height: 20vh;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sectionName h2 {
+  color: #26010f;
+  font-size: 140px;
+  font-family: "Bebas Neue", sans-serif;
+  max-width: 90%;
+  font-size: 6em;
+}
+
+.projectsSection {
+  background-color: #8c0335;
+  min-height: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: "Roboto Bold", "sans-serif";
+  height: 400px;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.projectBox img {
+  width: 240px;
+  height: 240px;
+  margin: 10px;
+}
+
+.projectBox h3 {
+  color: #d90452;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 5px;
+}
+
+.projectBox p {
+  color: #d90452;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 5px;
+  text-align: center;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
