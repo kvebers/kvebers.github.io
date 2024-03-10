@@ -34,7 +34,7 @@
       <h2>Projects</h2>
     </div>
     <div class="projectsSection">
-      {% for project.name in site.data.projects %}
+      {% for project in site.data.projects %}
       <div class="projectBox">
         <h3>{{ project.name }}</h3>
         <a href="{{ project.redirect }}">
