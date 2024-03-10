@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.title {
+  background-color: #0d0d0d;
+  width: 100%;
+  height: 40vh;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title h1 {
+  color: #d90452;
+  font-size: 140px;
+  font-family: "Bebas Neue", sans-serif;
+  max-width: 90%;
+}
+
+footer {
+  background-color: #0d0d0d;
+  color: #d90452;
+}
+
+#particleCanvas {
+  position: absolute;
+  min-height: 400px;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: auto;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+footer {
+  padding: 10px 0;
+}
+
+.about-section {
+  padding: 30px;
+  background: linear-gradient(to bottom, #0d0d0d, #8c0335);
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-section h2 {
+  font-size: 80px;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-family: "Bebas Neue", sans-serif;
+  color: #d90452;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
