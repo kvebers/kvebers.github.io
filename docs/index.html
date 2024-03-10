@@ -38,11 +38,11 @@
       <div class="projectBox">
         <h3>{{ project.name }}</h3>
         <a href="{{ project.redirect }}">
-          <img src="{{ project.img }}">
+          <img src="{{ project.img }}" alt="{{ project.name }}">
         </a>
         <p>{{ project.description }}</p>
       </div>
-      {% endfor %}
+    {% endfor %}
     </div>
       <footer>
         <p>© 2023 Karlis Vilhelms Vebers</p>
