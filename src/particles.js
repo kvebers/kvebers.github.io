@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const useParticles = () => {
   useEffect(() => {
-    const canvas = document.getElementById('particleCanvas');
-    const ctx = canvas.getContext('2d');
+    const canvas = document.getElementById("particleCanvas");
+    const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = 500;
 
@@ -24,8 +24,8 @@ const useParticles = () => {
         if (this.size > 0.2) this.size -= 0.1;
       }
       draw() {
-        ctx.fillStyle = '#590222';
-        ctx.strokeStyle = '#8C0335';
+        ctx.fillStyle = "#590222";
+        ctx.strokeStyle = "#8C0335";
         ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -36,23 +36,23 @@ const useParticles = () => {
     }
 
     function handleAnimation() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
-        // Generate new particles every frame
-        if (particlesArray.length < numberOfParticles) {
-          particlesArray.push(new Particle());
-        }
-        
-        for (let i = 0; i < particlesArray.length; i++) {
-          particlesArray[i].update();
-          particlesArray[i].draw();
-          if (particlesArray[i].size <= 0.2) {
-            particlesArray.splice(i, 1);
-            i--;
-          }
-        }
-        requestAnimationFrame(handleAnimation); // This will keep the animation running
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Generate new particles every frame
+      if (particlesArray.length < numberOfParticles) {
+        particlesArray.push(new Particle());
       }
+
+      for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update();
+        particlesArray[i].draw();
+        if (particlesArray[i].size <= 0.2) {
+          particlesArray.splice(i, 1);
+          i--;
+        }
+      }
+      requestAnimationFrame(handleAnimation); // This will keep the animation running
+    }
 
     for (let i = 0; i < numberOfParticles; i++) {
       particlesArray.push(new Particle());
