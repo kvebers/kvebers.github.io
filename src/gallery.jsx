@@ -31,8 +31,6 @@ const projects = [
     githubUrl: "https://github.com/kvebers/cube4d",
     imageUrl: cube,
   },
-  { name: "Tractor", imageUrl: tractor },
-  { name: "Tank", imageUrl: tank },
   {
     name: "IRC Server",
     githubUrl: "https://github.com/kvebers/irc",
@@ -63,21 +61,24 @@ const projects = [
     githubUrl: "https://github.com/kvebers/Python_Piscine",
     imageUrl: python,
   },
-  { name: "Watt", imageUrl: watt },
-  { name: "Space", imageUrl: space },
   {
     name: "Get Next Line",
     githubUrl: "https://github.com/kvebers/get_next_line",
     imageUrl: rick,
   },
+  { name: "Watt", imageUrl: watt },
+  { name: "Space", imageUrl: space },
+  { name: "Tractor", imageUrl: tractor },
+  { name: "Tank", imageUrl: tank },
 ];
 
 function GallerySection() {
   const sectionRef = useRef(null);
-  const canvasRef  = useRef(null);
+  const canvasRef = useRef(null);
 
   useEffect(() => {
-    const getCards = () => Array.from(sectionRef.current.querySelectorAll('.project-card'));
+    const getCards = () =>
+      Array.from(sectionRef.current.querySelectorAll(".project-card"));
     return startStickman(canvasRef.current, getCards);
   }, []);
 
