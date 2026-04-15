@@ -3,26 +3,35 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow-y: hidden;
+  scrollbar-width: none;
 }
 
-.App-header, footer {
-  background-color: #0D0D0D;
-  color: #D90452;
+.projects-transition {
+  background: linear-gradient(to bottom, #0d0d0d, #8c0335);
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.projects-transition h2 {
+  font-size: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #d90452;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.App-header,
+footer {
+  background-color: #0d0d0d;
+  color: #d90452;
 }
 
 .App-header {
   position: relative;
-  height: 500px;
-  overflow: hidden;
-}
-
-#particleCanvas {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  z-index: 2;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .App-header h1 {
@@ -31,12 +40,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: #D90452; 
+  color: #d90452;
   font-size: 140px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-section, .App-header, footer {
+section,
+.App-header,
+footer {
   padding: 20px 0;
 }
 
@@ -44,121 +55,238 @@ footer {
   padding: 10px 0;
 }
 
-
 .about-section {
-  padding: 30px; 
-  background: linear-gradient(to bottom, #0D0D0D, #8C0335); 
-  text-align: center; 
-  overflow: hidden; 
+  padding: 30px;
+  background: linear-gradient(to bottom, #0d0d0d, #8c0335);
+  text-align: center;
+  overflow: hidden;
 }
 
 .about-section h2 {
   font-size: 80px;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   margin-bottom: 10px;
 }
 
 .about-section p {
-  font-family: 'Bebas Neue', sans-serif;
-  color: #D90452;
+  font-family: "Bebas Neue", sans-serif;
+  color: #d90452;
   font-size: 30px;
   margin-top: 10px;
 }
 
 .tools-section {
-  background-color: #8C0335;
+  background-color: #8c0335;
   margin: 0;
 }
 
-.tools-section h2{
+.tools-section h2 {
   font-size: 80px;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #26010F; 
+  font-family: "Bebas Neue", sans-serif;
+  color: #26010f;
 }
 
-.tools-section p{
+.tools-section p {
   font-size: 30px;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #26010F; 
+  font-family: "Bebas Neue", sans-serif;
+  color: #26010f;
 }
-
 
 .gallery-section {
-  padding: 30px; 
-  background-color: #8C0335;
+  position: relative;
+  padding: 40px 30px 30px;
+  background-color: #8c0335;
+}
+
+.stickman-canvas {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
+  gap: 40px;
+  max-width: calc(4 * 200px + 3 * 40px);
+  margin: 0 auto;
+}
+
+.project-card {
+  position: relative;
+  aspect-ratio: 4 / 6;
+  overflow: hidden;
+  border-radius: 4px;
+  display: block;
+  cursor: pointer;
+  width: 200px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+  filter: grayscale(40%);
+}
+
+.project-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 13, 13, 0.7);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.gallery-section h2 {
-  font-size: 80px;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #26010F; 
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
 }
 
-.contact-section {
-  margin: 0;
-  background-color: #8C0335;
+.project-card:hover .project-card-overlay {
+  opacity: 1;
 }
 
-.contact-section h2 {
-  font-size: 80px;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #26010F; 
+.project-card-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #d90452;
+  letter-spacing: 0.05em;
 }
 
+.project-card-link {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.fixed-contacts {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 100;
+}
+
+.micro-banner {
+  position: fixed;
+  right: 72px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0d0d0d;
+  border: 1px solid #d90452;
+  color: #d90452;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  z-index: 101;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.micro-banner img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(295deg) brightness(1.2);
+}
+
+.micro-banner--in {
+  opacity: 1;
+}
+
+.micro-banner--out {
+  opacity: 0;
+}
+
+footer {
+  padding: 50px 0;
+}
 
 footer p {
   margin: 0;
 }
 
-.gallery-section .slick-slide img {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); 
-  transition: all 0.3s ease-in-out;
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  15% {
+    transform: rotate(-15deg) scale(1.2);
+  }
+  30% {
+    transform: rotate(10deg) scale(1.2);
+  }
+  45% {
+    transform: rotate(-8deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(5deg) scale(1.2);
+  }
+  75% {
+    transform: rotate(-3deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
 
-.gallery-section .slick-slide img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
-}
-
-.gallery-section .slick-slider {
-  perspective: 2000px;
-  overflow: visible;
-}
-
-.gallery-section .slick-slide {
-  transform: rotateY(10deg) scale(0.9);
-  transition: transform 0.3s;
-}
-
-.gallery-section .slick-center {
-  transform: rotateY(0deg) scale(1);
-  z-index: 2;
-}
-
-.gallery-section .slick-list {
-  left: 1.4vw;
-}
-
-
-.gallery-section .slick-center {
-  transform: rotateY(0deg) scale(1);
-  z-index: 2;
+.contact-icon-link {
   position: relative;
+  display: inline-block;
 }
 
-.gallery-section .slick-slide img {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); 
-  transition: all 0.5s ease-in-out;
-  filter: grayscale(100%);
+.fixed-contacts img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+  transition: opacity 0.2s, filter 0.2s;
 }
 
-.gallery-section .slick-center img {
-  filter: grayscale(0%);
+.contact-icon-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 13, 13, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 11px;
+  color: #d90452;
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 4px;
 }
 
-.contact-icons img {
-  background-color: transparent;
+.contact-icon-link:hover img {
+  animation: wobble 0.6s ease;
+  opacity: 1;
+  filter: drop-shadow(0 0 8px #d90452);
+}
+
+.contact-icon-link:hover .contact-icon-overlay {
+  opacity: 1;
 }
