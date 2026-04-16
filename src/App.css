@@ -8,7 +8,7 @@
 }
 
 .projects-transition {
-  background: linear-gradient(to bottom, #0d0d0d, #8c0335);
+  background: linear-gradient(to bottom, #1F2226, #474F59);
   padding: 80px 0 60px;
   text-align: center;
 }
@@ -16,15 +16,15 @@
 .projects-transition h2 {
   font-size: 100px;
   font-family: "Bebas Neue", sans-serif;
-  color: #d90452;
+  color: #AEB5BF;
   margin: 0;
   letter-spacing: 0.05em;
 }
 
 .App-header,
 footer {
-  background-color: #0d0d0d;
-  color: #d90452;
+  background-color: #1F2226;
+  color: #AEB5BF;
 }
 
 .App-header {
@@ -40,7 +40,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: #d90452;
+  color: #AEB5BF;
   font-size: 140px;
   font-family: "Bebas Neue", sans-serif;
 }
@@ -57,7 +57,7 @@ footer {
 
 .about-section {
   padding: 30px;
-  background: linear-gradient(to bottom, #0d0d0d, #8c0335);
+  background: linear-gradient(to bottom, #1F2226, #474F59);
   text-align: center;
   overflow: hidden;
 }
@@ -70,32 +70,32 @@ footer {
 
 .about-section p {
   font-family: "Bebas Neue", sans-serif;
-  color: #d90452;
+  color: #AEB5BF;
   font-size: 30px;
   margin-top: 10px;
 }
 
 .tools-section {
-  background-color: #8c0335;
+  background-color: #474F59;
   margin: 0;
 }
 
 .tools-section h2 {
   font-size: 80px;
   font-family: "Bebas Neue", sans-serif;
-  color: #26010f;
+  color: #1F2226;
 }
 
 .tools-section p {
   font-size: 30px;
   font-family: "Bebas Neue", sans-serif;
-  color: #26010f;
+  color: #1F2226;
 }
 
 .gallery-section {
   position: relative;
   padding: 40px 30px 30px;
-  background-color: #8c0335;
+  background-color: #474F59;
 }
 
 .stickman-canvas {
@@ -142,7 +142,7 @@ footer {
 .project-card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(13, 13, 13, 0.7);
+  background: rgba(30, 34, 38, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,14 +164,14 @@ footer {
 .project-card-name {
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
-  color: #d90452;
+  color: #AEB5BF;
   letter-spacing: 0.05em;
 }
 
 .project-card-link {
   font-family: "Bebas Neue", sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #F0F0F2;
   letter-spacing: 0.05em;
 }
 
@@ -191,9 +191,9 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #0d0d0d;
-  border: 1px solid #d90452;
-  color: #d90452;
+  background: #1F2226;
+  border: 1px solid #AEB5BF;
+  color: #AEB5BF;
   font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
   letter-spacing: 0.06em;
@@ -207,7 +207,7 @@ footer {
 .micro-banner img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(295deg) brightness(1.2);
+  filter: brightness(0) invert(1) brightness(0.7);
 }
 
 .micro-banner--in {
@@ -269,13 +269,13 @@ footer p {
 .contact-icon-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(13, 13, 13, 0.75);
+  background: rgba(30, 34, 38, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 11px;
-  color: #d90452;
+  color: #AEB5BF;
   opacity: 0;
   transition: opacity 0.2s;
   border-radius: 4px;
@@ -284,7 +284,7 @@ footer p {
 .contact-icon-link:hover img {
   animation: wobble 0.6s ease;
   opacity: 1;
-  filter: drop-shadow(0 0 8px #d90452);
+  filter: drop-shadow(0 0 8px #AEB5BF);
 }
 
 .contact-icon-link:hover .contact-icon-overlay {
